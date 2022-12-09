@@ -7,4 +7,4 @@ printf "Insert a number: "
 let number = Int32.Parse(Console.ReadLine())
 
 let isOddSquare = number |> square |> isOdd
-printfn "Is the square of {number} odd? %b" isOddSquare
+printfn $"Is the square of {number} odd? {isOddSquare}"
