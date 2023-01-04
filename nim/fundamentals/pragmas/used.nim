@@ -1,0 +1,1 @@
+let color {.used.}: string = "red"
