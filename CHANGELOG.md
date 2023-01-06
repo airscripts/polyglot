@@ -15,11 +15,11 @@ Please note that this repository adheres not completely to the standard indicate
 * feat(nim): add a basic cli written in nim
 
 ### Full Changelog 
-https://github.com/Airscripts/blog.airscript.it/commits/1.1.0
+https://github.com/Airscripts/polyglot/compare/1.0.0...1.1.0
 
 ## 🎉 1.0.0
 ### What's Changed
 * feat(nim): add nim programming language fundamentals
 
 ### Full Changelog 
-https://github.com/Airscripts/blog.airscript.it/commits/1.0.0
+https://github.com/Airscripts/polyglot/commits/1.0.0
