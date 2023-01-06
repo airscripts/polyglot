@@ -15,6 +15,11 @@ proc status*(request: Request) {.async.} =
   let content: string = fmt"status: {true}"
   await request.respond(code=Http200, content=content)
 
+proc poweroff*(request: Request) {.async.} =
+  let content: string = fmt"shutdown: {true}"
+  await request.respond(code=Http200, content=content)
+  system.quit(errorcode=QuitSuccess)
+
 proc hello*(request: Request) {.async.} = 
   let content = "Hello, World!"
   await request.respond(code=Http200, content=content)
