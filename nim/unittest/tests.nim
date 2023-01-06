@@ -20,3 +20,9 @@ suite "Calculator functions test suite":
     check(sub(15,5) != 11)
     check(sub(33.1, 13.1) == 20)
     check(sub(11.1, 10.1) != 1.1)
+
+  test "Mul function":
+    check(mul(5,5) == 25)
+    check(mul(10,1) != 11)
+    check(mul(11.1, 2) == 22.2)
+    check(mul(5.5, 3) != 12)
