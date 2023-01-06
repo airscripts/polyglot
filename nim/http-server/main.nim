@@ -1,15 +1,7 @@
 import std/asyncdispatch
 import std/asynchttpserver
 
-proc `root`(req: Request) {.async.} =
-  let headers: array = {"Content-Type": "text/plain; charset=utf-8"}
-  let response: string = "Hello, World!"
-
-  await req.respond(
-    code=Http200,
-    content=response,
-    headers=headers.newHttpHeaders()
-  )
+from router as root import router
 
 proc main() {.async.} =
   let port: int = 25501
@@ -19,7 +11,7 @@ proc main() {.async.} =
 
   while true:
     if server.shouldAcceptRequest():
-      await server.acceptRequest(callback=root)
+      await server.acceptRequest(callback=root.router)
 
     else:
       await sleepAsync(500)
