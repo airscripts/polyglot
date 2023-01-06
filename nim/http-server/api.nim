@@ -1,4 +1,6 @@
 import std/asyncdispatch
+
+from std/strformat import fmt
 from std/asynchttpserver import Request, respond, Http404, Http200
 
 proc root*(request: Request) {.async.} =
@@ -7,6 +9,10 @@ proc root*(request: Request) {.async.} =
 
 proc ping*(request: Request) {.async.} =
   let content = "pong"
+  await request.respond(code=Http200, content=content)
+
+proc status*(request: Request) {.async.} =
+  let content: string = fmt"status: {true}"
   await request.respond(code=Http200, content=content)
 
 proc hello*(request: Request) {.async.} = 
