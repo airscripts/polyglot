@@ -2,20 +2,18 @@ import std/asyncdispatch
 import std/asynchttpserver
 
 from router as root import router
+from constants as constants import SERVER_PORT, SERVER_SLEEP
 
 proc main() {.async.} =
-  let port: int = 25501
   var server: AsyncHttpServer = newAsyncHttpServer()
-
-  server.listen(port=Port(port))
+  server.listen(port=Port(SERVER_PORT))
 
   while true:
     if server.shouldAcceptRequest():
       await server.acceptRequest(callback=root.router)
 
     else:
-      await sleepAsync(500)
-
+      await sleepAsync(SERVER_SLEEP)
 
 when isMainModule:
   waitFor main()
