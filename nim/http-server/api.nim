@@ -9,8 +9,9 @@ proc ping*(request: Request) {.async.} =
   let content = "pong"
   await request.respond(code=Http200, content=content)
 
-proc hello*() = 
-  discard
+proc hello*(request: Request) {.async.} = 
+  let content = "Hello, World!"
+  await request.respond(code=Http200, content=content)
 
 proc error*(request: Request) {.async.} =
   let content = "Cannot process request."
