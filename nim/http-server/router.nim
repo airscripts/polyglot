@@ -7,7 +7,7 @@ proc router*(request: Request) {.async.} =
   let path = request.url.path
 
   case path:
-    of "/": root()
+    of "/": await request.root()
     of "/ping": ping()
     of "/hello": hello()
-    else: await error(request=request)
+    else: await request.error()

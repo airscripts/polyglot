@@ -1,8 +1,9 @@
 import std/asyncdispatch
-from std/asynchttpserver import Request, respond, Http404
+from std/asynchttpserver import Request, respond, Http404, Http200
 
-proc root*() =
-  discard
+proc root*(request: Request) {.async.} =
+  let content = "This is where everything begins."
+  await request.respond(code=Http200, content=content)
 
 proc ping*() =
   discard
