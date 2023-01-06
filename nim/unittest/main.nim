@@ -9,7 +9,7 @@ proc `sub`*(x: T, y: T): T {.used.} =
 proc `mul`*(x: T, y: T): T {.used.} =
   return x * y
 
-proc `div`*(x: T, y: T): T {.used.} =
+proc `div`*(x: T, y: T): float {.used.} =
   return x / y
 
 proc `mod`*(x: T, y: T): T {.used.} =
