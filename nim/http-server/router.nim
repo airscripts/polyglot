@@ -9,5 +9,5 @@ proc router*(request: Request) {.async.} =
   case path:
     of "/": await request.root()
     of "/ping": await request.ping()
-    of "/hello": hello()
+    of "/hello": await request.hello()
     else: await request.error()
