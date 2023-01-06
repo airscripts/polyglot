@@ -5,8 +5,9 @@ proc root*(request: Request) {.async.} =
   let content = "This is where everything begins."
   await request.respond(code=Http200, content=content)
 
-proc ping*() =
-  discard
+proc ping*(request: Request) {.async.} =
+  let content = "pong"
+  await request.respond(code=Http200, content=content)
 
 proc hello*() = 
   discard
