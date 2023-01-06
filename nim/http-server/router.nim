@@ -3,11 +3,11 @@ import std/asynchttpserver
 
 from api as api import root, ping, hello, error
 
-proc router*(req: Request) {.async.} =
-  let path = req.url.path
+proc router*(request: Request) {.async.} =
+  let path = request.url.path
 
   case path:
     of "/": root()
     of "/ping": ping()
     of "/hello": hello()
-    else: error()
+    else: await error(request=request)
