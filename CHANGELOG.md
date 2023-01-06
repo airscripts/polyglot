@@ -10,6 +10,13 @@ Please note that this repository adheres not completely to the standard indicate
 - A patch version is released when a needed fix or batch of fixes is released.
 &nbsp;
 
+## 🎉 1.3.0
+### What's Changed
+* feat(nim): add an unittest poc in nim
+
+### Full Changelog 
+https://github.com/Airscripts/polyglot/compare/1.2.0...1.3.0
+
 ## 🎉 1.2.0
 ### What's Changed
 * feat(nim): add an http server poc in nim
