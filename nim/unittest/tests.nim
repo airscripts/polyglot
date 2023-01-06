@@ -10,6 +10,13 @@ suite "Calculator functions test suite":
     discard
 
   test "Add function":
-    check(add(1,2) == 3)
-    check(add(12.33, 4.11) == 16.44)
+    check(add(15,18) == 33)
     check(add(7,35) != 43)
+    check(add(12.33, 4.11) == 16.44)
+    check(add(1.74, 1.73) != 1)
+
+  test "Sub function":
+    check(sub(1,5) == -4)
+    check(sub(15,5) != 11)
+    check(sub(33.1, 13.1) == 20)
+    check(sub(11.1, 10.1) != 1.1)
