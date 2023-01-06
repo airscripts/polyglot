@@ -32,3 +32,9 @@ suite "Calculator functions test suite":
     check(main.div(13, 2) != 6)
     check(main.div(6.66, 2.00) == 3.33)
     check(main.div(8.33, 2.11) != 42)
+
+  test "Mod function":
+    check(main.mod(12, 3) == 0)
+    check(main.mod(16, 4) != 1)
+    check(main.mod(11, 4) == 3)
+    check(main.mod(23, 21) != 3)
