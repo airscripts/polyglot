@@ -1,0 +1,12 @@
+{
+  "name": "polyglot",
+  "image": "alpine:3.17",
+
+  "forwardPorts": [
+    25001
+  ],
+
+  "runArgs": [
+    "--name", "polyglot"
+  ]
+}
