@@ -7,7 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Please note that this repository adheres not completely to the standard indicated above.  
 - A major version is released when a new programming language fundamental has been added to the repository;  
 - A minor version is released when a new small project of any given language has been added to the repository;  
-- A patch version is released when a needed fix or batch of fixes is released.
+- A patch version is released when a needed fix or batch of fixes is released.  
+&nbsp;
+
+## 🎉 1.4.0
+### What's Changed
+* feat: add devcontainer base configuration by @Airscripts in https://github.com/Airscripts/polyglot/pull/8
+* feat(nim): add testament poc by @Airscripts in https://github.com/Airscripts/polyglot/pull/10
+
+### New Contributors
+* @Airscripts made their first contribution in https://github.com/Airscripts/polyglot/pull/8
+
+**Full Changelog**: https://github.com/Airscripts/polyglot/compare/1.3.0...1.4.0  
 &nbsp;
 
 ## 🎉 1.3.0
@@ -15,21 +26,24 @@ Please note that this repository adheres not completely to the standard indicate
 * feat(nim): add an unittest poc in nim
 
 ### Full Changelog 
-https://github.com/Airscripts/polyglot/compare/1.2.0...1.3.0
+https://github.com/Airscripts/polyglot/compare/1.2.0...1.3.0  
+&nbsp;
 
 ## 🎉 1.2.0
 ### What's Changed
 * feat(nim): add an http server poc in nim
 
 ### Full Changelog 
-https://github.com/Airscripts/polyglot/compare/1.1.0...1.2.0
+https://github.com/Airscripts/polyglot/compare/1.1.0...1.2.0  
+&nbsp;
 
 ## 🎉 1.1.0
 ### What's Changed
 * feat(nim): add a basic cli written in nim
 
 ### Full Changelog 
-https://github.com/Airscripts/polyglot/compare/1.0.0...1.1.0
+https://github.com/Airscripts/polyglot/compare/1.0.0...1.1.0  
+&nbsp;
 
 ## 🎉 1.0.0
 ### What's Changed
