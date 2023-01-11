@@ -1,0 +1,5 @@
+const PORT*: string = "25501"
+const PROTOCOL*: string = "http"
+const PING_API*: string = "/ping"
+const STATUS_OK*: string = "200 OK"
+const HOSTNAME*: string = "localhost"
